@@ -1,0 +1,45 @@
+#plateau{
+    margin:auto;
+    background-color: #2D2733;
+    position: relative; 
+    width:550px;
+    height:550px;
+}
+
+#pion1{
+    position:absolute;
+    left:0;
+    top:0;
+    width:50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url(image/fixe.png);
+}
+
+#bombe img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#bombe{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 50px;
+    height: 50px; 
+}
+
+.img{
+   position:absolute;  
+  
+
+}
+.img img{
+    width:50px;
+    height: 50px;
+     z-index: 2;
+  
+    
+       
+}
