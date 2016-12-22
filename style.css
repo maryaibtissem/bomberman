@@ -1,14 +1,24 @@
 #plateau{
     margin:auto;
-    background-color: #2D2733;
+   background-color: rgba( 156, 25, 26, 0.8);
     position: relative; 
     width:550px;
     height:550px;
+    margin-top: 150px;
+    overflow: hidden;
+   
+}
+
+body{
+background-image:url(image/bomberman_in_christmas_2011_16_9_by_kuro19890616-d4jwyfm.jpg);
+background-size:cover;    
+
+
 }
 
 #pion1{
     position:absolute;
-    left:0;
+    left:500px;
     top:0;
     width:50px;
     height: 50px;
@@ -18,28 +28,138 @@
 
 #bombe img{
     margin: 10px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
-#bombe{
+#bombe{  
     position:absolute;
     left:0;
     top:0;
-    width: 50px;
-    height: 50px; 
+  
 }
 
 .img{
    position:absolute;  
-  
+  z-index:3;
 
 }
 .img img{
     width:50px;
     height: 50px;
-     z-index: 2;
-  
+
     
        
+}
+
+#mechant{
+    background-image:url(image/mechant.png);
+    background-repeat: no-repeat;
+   position:absolute;
+  
+    width: 50px;
+    height: 50px;   
+  
+    z-index:0;
+    
+}
+
+#fond{
+    margin:auto;
+    background-color: rgba( 156, 25, 26, 0.8);
+    position: absolute; 
+  
+    width:550px;
+    height:550px;
+  
+}
+
+.titre{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+.jouer{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    left: 50%;
+    margin-left: -75px;
+    top: 450px;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 15px;
+    text-decoration: none;
+    
+}
+p{
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+#intro{
+    position: absolute;
+    width: 250px;
+    top: 150px;
+    left: 300px;
+}
+
+#sapin{
+    position: absolute;
+    top: 250px;
+    left: 25px;
+    width: 150px;
+}
+
+#perdu{
+    margin:auto;
+     background-color: rgba( 156, 25, 26, 0.8);
+    position: absolute;
+    top: 0;
+    width:550px;
+    height:550px;
+    visibility: hidden;
+    
+}
+#triste{
+    position: absolute;
+    top:160px;
+    width: 180px;
+    left: 20px;
+}
+
+#imgmechant{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    width: 300px;
+}
+
+#gagne{
+    margin:auto;
+    background-color: rgba( 156, 25, 26, 0.8);
+    position: absolute;
+    top: 0;
+    width:550px;
+    height:550px;
+    visibility: hidden;
+}
+
+#heureux{
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 250px;
+    
+}
+
+#mechantp{
+    position: absolute;
+    right: 20px;
+    top: 125px;
+    width: 200px;
 }

@@ -5,10 +5,14 @@
     <title>Jeu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body  >
+    
 <section id="plateau">
+    
+    <div id="jeux" style= "display:none">
    <article id="pion1"></article>
-    <article id="bombe" style="display:none"><img src="image/bombe.png"> </article>
+    
+    <article id="bombe" style="display:none"><img src="image/Bombe-Cadeau.png"> </article>
     
     <article class="img" id="img1" style="display:none" > <img src="image/explosion.png">
     </article>
@@ -16,8 +20,34 @@
     <article class="img" style="display:none"  id="img3" > <img src="image/explosion.png"> </article>
      <article class="img" style="display:none"  id="img4" > <img src="image/explosion.png"> </article>
       <article class="img" style="display:none"  id="img5" > <img src="image/explosion.png"> </article>
+       <article id="mechant" style="display:block;left:0;top:0" >   </article>
+    </div>
 <!--   <article id="pion2"></article>-->
-</section>
+  <section id="fond">
+        <div class="titre">Bomberman</div>
+        <div class="titre">Edition spéciale Noël.</div>
+        <a class="jouer" onclick="test3()"><p>Jouer</p></a>
+            <img id="intro" src="image/bomberintro.png"/>
+            <img id="sapin" src="image/sapin.png"/>
+      </section>
+        <section id="perdu">
+            <div class="titre">Vous avez perdu !</div>
+            <a class="jouer" onclick="test5()"><p>Essaie encore</p></a>
+            <img id="triste" src="image/bomberman-triste.png"/>
+            <img id="imgmechant" src="image/mechant1.png"/>
+        </section>
+        <section id="gagne">
+            <div class="titre">Félicitation</div>
+            <img id="heureux" src="image/heureux.png"/>
+            <img id="mechantp" src="image/mechant-triste.png"/>
+            <a class="jouer" onclick="test4()"><p>Quitter</p></a>
+        </section>    
+        </section>       
+    
+     
+    
+    
     <script src="script.js"></script>
+    <script src="mechant.js"></script>
 </body>
 </html>
